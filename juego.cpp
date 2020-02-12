@@ -20,9 +20,9 @@ Juego::Juego()
 {
 	virus_activado=false;
 	srand(time(NULL));
-	n_celulas_mayores = rand() % 3 + 2;
-	n_celulas_menores = rand() % 6 + 5;
-	n_virus = rand() % 4 + 3;
+	n_celulas_mayores = rand() % 15 + 5;   
+	n_celulas_menores = rand() % 20 + 10;
+	n_virus = rand() % 10 + 5;
 	total = n_celulas_mayores + n_celulas_menores + n_virus;
 	nivel = 1;
 	jugador = new Jugador(masa_jugador);
